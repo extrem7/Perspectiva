@@ -1,5 +1,5 @@
 @blue:#263248;
-@blue-light:#778a9a;
+@blue-light:#7e8aa2;
 @light:#e8e8e8;
 @orange:#ff9700;
 
@@ -67,11 +67,25 @@
     }
 }
 
+p b{
+    font-weight: 900;
+    color: @blue-light;
+    text-transform: uppercase;
+    &.orange{
+        color: @orange;
+    }
+    &.white{
+        color: white;
+    }
+}
+
 p.title {
     font-weight: 900;
     font-size: 36px;
     color: @blue-light;
     text-transform: uppercase;
+    margin: 0;
+    text-align: center;
     &.white {
         color: white;
     }
@@ -110,6 +124,7 @@ p.title {
         span {
             color: black;
             font-weight: 200;
+            font-size: 18px;
         }
     }
 }

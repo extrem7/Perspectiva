@@ -41,9 +41,9 @@ const config = {
     server: {
         baseDir: "./build"
     },
-    tunnel: true,
     host: 'localhost',
-    port: 9000,
+    port: 8888,
+    fallback: 'index.html',
     logPrefix: "Yurka"
 };
 
@@ -91,7 +91,7 @@ gulp.task('css:build', function () {
 
 gulp.task('image:build', function () {
     gulp.src(path.src.img)
-        .pipe(imagemin({
+        /*.pipe(imagemin({
             progressive: true,
             optimizationLevel: 10,
             svgoPlugins: [{
@@ -99,7 +99,7 @@ gulp.task('image:build', function () {
             }],
             use: [pngquant()],
             interlaced: true
-        }))
+        }))*/
         .pipe(gulp.dest(path.build.img))
         .pipe(reload({
             stream: true

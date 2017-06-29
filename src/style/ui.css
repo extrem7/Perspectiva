@@ -25,7 +25,7 @@
   user-select: none;
 }
 .btn-orange.light {
-  background: #778a9a;
+  background: #7e8aa2;
 }
 .btn-orange:hover {
   background: #ff9700;
@@ -51,11 +51,24 @@
   line-height: 1.7;
   text-transform: lowercase;
 }
+p b {
+  font-weight: 900;
+  color: #7e8aa2;
+  text-transform: uppercase;
+}
+p b.orange {
+  color: #ff9700;
+}
+p b.white {
+  color: white;
+}
 p.title {
   font-weight: 900;
   font-size: 36px;
-  color: #778a9a;
+  color: #7e8aa2;
   text-transform: uppercase;
+  margin: 0;
+  text-align: center;
 }
 p.title.white {
   color: white;
@@ -90,6 +103,7 @@ p.title span {
 .item-block div span {
   color: black;
   font-weight: 200;
+  font-size: 18px;
 }
 .star {
   height: 171px;

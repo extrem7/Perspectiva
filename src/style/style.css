@@ -87,7 +87,7 @@ body {
   user-select: none;
 }
 .btn-orange.light {
-  background: #778a9a;
+  background: #7e8aa2;
 }
 .btn-orange:hover {
   background: #ff9700;
@@ -113,11 +113,24 @@ body {
   line-height: 1.7;
   text-transform: lowercase;
 }
+p b {
+  font-weight: 900;
+  color: #7e8aa2;
+  text-transform: uppercase;
+}
+p b.orange {
+  color: #ff9700;
+}
+p b.white {
+  color: white;
+}
 p.title {
   font-weight: 900;
   font-size: 36px;
-  color: #778a9a;
+  color: #7e8aa2;
   text-transform: uppercase;
+  margin: 0;
+  text-align: center;
 }
 p.title.white {
   color: white;
@@ -152,6 +165,7 @@ p.title span {
 .item-block div span {
   color: black;
   font-weight: 200;
+  font-size: 18px;
 }
 .star {
   height: 171px;
@@ -194,7 +208,7 @@ p.title span {
   padding: 0 6%;
 }
 header {
-  height: 98px;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -279,6 +293,93 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
 }
+.sale {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background: #e8e8e8;
+}
+.sale p {
+  font-size: 36px;
+  margin-bottom: 70px;
+  font-weight: 200;
+}
+.sale p.title {
+  font-weight: 900;
+}
+.sale li {
+  color: black;
+  list-style: url(../img/check-list-blue.png);
+  font-weight: 200;
+}
+.sale .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sale .text {
+  margin-right: 2%;
+}
+.sale .star {
+  min-width: 171px;
+  max-width: 171px;
+}
+.sale .btn-orange {
+  padding: 20px 82px;
+  margin-top: 35px;
+}
+.profits {
+  padding-top: 45px;
+}
+.profits .title {
+  margin-bottom: 60px;
+}
+.profits .items {
+  padding: 0 12%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.profits .items .item-block {
+  width: 50%;
+  margin-bottom: 60px;
+}
+.profits .get-info {
+  padding: 20px 0;
+  background: #7e8aa2;
+  color: white;
+}
+.profits .get-info p {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 200;
+}
+.profits .btn-wrap {
+  background: #e8e8e8;
+  padding: 40px 0;
+}
+.profits .btn-wrap .btn-orange {
+  padding: 13px 35px;
+}
+.you-get .title {
+  margin: 50px 0;
+}
+.you-get .row {
+  display: flex;
+}
+.you-get .row div {
+  width: 50%;
+}
+.you-get .row .left {
+  background: #263248;
+  color: white;
+  font-size: 36px;
+  font-weight: 200;
+  padding: 55px 0 55px 5%;
+}
+.you-get .row .right {
+  background: url(../img/get-photo.png) no-repeat center;
+  background-size: cover;
+}
 @media screen and (max-width: 1350px) {
   header .menu {
     font-size: 25px;
@@ -295,7 +396,7 @@ h1 {
     width: 270px;
   }
   header .menu {
-    font-size: 23px;
+    font-size: 22px;
   }
   header .menu li {
     margin: 0 .3%;
@@ -308,6 +409,21 @@ h1 {
   }
   .main .row .check-list li {
     font-size: 26px;
+  }
+  .sale p,
+  .sale li {
+    font-size: 30px;
+  }
+  .sale p.title,
+  .sale li.title {
+    font-size: 36px;
+  }
+  .profits .items {
+    padding: 0 2%;
+  }
+  .you-get .row .left {
+    padding: 40px 0 40px 4%;
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -335,6 +451,27 @@ h1 {
   }
   .main .row .check-list li span {
     top: -15px;
+  }
+  .sale p,
+  .sale li {
+    font-size: 25px;
+  }
+  .sale p.title,
+  .sale li.title {
+    font-size: 36px;
+  }
+  .profits .items {
+    padding: 0 1%;
+  }
+  .profits .items .item-block img {
+    margin: 0 25px;
+  }
+  .profits .get-info p {
+    font-size: 24px;
+  }
+  .you-get .row .left {
+    padding: 20px 0 20px 3%;
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -396,6 +533,78 @@ h1 {
   }
   .main .row .course-start div {
     font-size: 33px;
+  }
+  .sale {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .sale .content {
+    flex-direction: column;
+  }
+  .sale p {
+    margin-bottom: 15px;
+  }
+  .sale ul {
+    margin-right: 0;
+  }
+  .sale p,
+  .sale li {
+    font-size: 21px;
+  }
+  .sale p.title,
+  .sale li.title {
+    font-size: 36px;
+  }
+  .sale .btn-orange {
+    padding: 10px 20px;
+    font-size: 26px;
+  }
+  .profits .title {
+    margin-bottom: 25px;
+  }
+  .profits .items {
+    padding: 0;
+    justify-content: center;
+  }
+  .profits .items .item-block {
+    width: 300px;
+    margin-bottom: 25px;
+    justify-content: center;
+    text-align: center;
+  }
+  .profits .items .item-block img {
+    margin: 0 15px;
+    display: none;
+  }
+  .profits .items .item-block p {
+    font-size: 26px;
+  }
+  .profits .items .item-block span {
+    font-size: 16px;
+  }
+  .profits .get-info p {
+    font-size: 19px;
+  }
+  .profits .btn-wrap .btn-orange {
+    padding: 10px 13px;
+    font-size: 23px;
+  }
+  .you-get .title {
+    margin: 25px 0;
+  }
+  .you-get .row {
+    flex-direction: column;
+  }
+  .you-get .row div {
+    width: 100%;
+  }
+  .you-get .row .left {
+    padding: 20px 0 20px 3%;
+    font-size: 22px;
+    text-align: center;
+  }
+  .you-get .row .right {
+    height: 144px;
   }
 }
 .cbalink {
