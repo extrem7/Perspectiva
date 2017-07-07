@@ -80,7 +80,7 @@ p b {
 p.title {
   font-weight: 900;
   font-size: 36px;
-  color: @blue-light;
+  color: #576f83;
   text-transform: uppercase;
   margin: 0;
   text-align: center;
@@ -167,7 +167,7 @@ p.title {
     position: absolute;
     .size(63px, 120px);
     display: block;
-    top:8%;
+    top:20%;
     background-image: url(../img/carousel-arrow.png);
     background-color: transparent;
     .transition(background);
@@ -182,6 +182,17 @@ p.title {
       transform: rotate(180deg);
     }
   }
+}
+
+.up-button {
+  height: 49px;
+  width: 49px;
+  background: url(../img/up-button.png);
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {

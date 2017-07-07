@@ -126,7 +126,7 @@ p b.white {
 p.title {
   font-weight: 900;
   font-size: 36px;
-  color: #7e8aa2;
+  color: #576f83;
   text-transform: uppercase;
   margin: 0;
   text-align: center;
@@ -207,7 +207,7 @@ p.title span {
   height: 120px;
   width: 63px;
   display: block;
-  top: 8%;
+  top: 20%;
   background-image: url(../img/carousel-arrow.png);
   background-color: transparent;
   transition: background 0.3s ease-in-out;
@@ -221,6 +221,16 @@ p.title span {
 .carousel .slick-arrow.slick-next {
   right: -50px;
   transform: rotate(180deg);
+}
+.up-button {
+  height: 49px;
+  width: 49px;
+  background: url(../img/up-button.png);
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 1200px) {
   .items {
@@ -316,11 +326,15 @@ h1 {
   padding-bottom: 60px;
   background: url(../img/main-back.png) no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .main .blue-wrap {
   background: rgba(38, 50, 72, 0.7);
   padding-top: 120px;
   padding-bottom: 45px;
+}
+.main .blue-wrap * {
+  opacity: 0;
 }
 .main .blue-wrap p {
   font-weight: 200;
@@ -337,6 +351,9 @@ h1 {
 .main .row {
   padding-top: 30px;
   display: flex;
+}
+.main .row * {
+  opacity: 0;
 }
 .main .check-list {
   padding: 35px;
@@ -380,6 +397,10 @@ h1 {
 .sale .btn-orange {
   padding: 20px 82px;
   margin-top: 35px;
+  background: #4f596a;
+}
+.sale .btn-orange:hover {
+  background: #ff9700;
 }
 .profits {
   padding-top: 45px;
@@ -436,7 +457,10 @@ h1 {
 .parts .items {
   background: url(../img/parts-circle.png) no-repeat;
   background-position-y: center;
-  background-position-x: 45%;
+  background-position-x: center;
+}
+.parts .items .item-block {
+  width: 40%;
 }
 .parts .items .item-block b {
   font-size: 36px;
@@ -476,14 +500,17 @@ h1 {
 .team .title {
   margin-bottom: 25px;
 }
+.team .carousel {
+  width: 80vw;
+}
 .team .carousel .block img {
-  height: 235px;
-  margin-top: 30px;
+  height: 19.5vw;
+  margin-top: 60px;
 }
 .team .carousel .block .info {
-  width: 650px;
+  width: 50vw;
   position: relative;
-  left: -55%;
+  left: -11.5vw;
   margin-top: 50px;
   display: none;
   font-weight: 200;
@@ -499,7 +526,7 @@ h1 {
   display: block;
 }
 .team .carousel .block.slick-current img {
-  transform: scale(1.25);
+  height: 24.5vw;
   margin: 0 auto;
 }
 .team .carousel .block.slick-current .info {
@@ -531,6 +558,10 @@ h1 {
 .conditions .content .btn-orange {
   margin-top: 60px;
   padding: 12px 48px;
+  background: #7e8aa2;
+}
+.conditions .content .btn-orange:hover {
+  background: #ff9700;
 }
 .conditions .middle {
   font-size: 36px;
@@ -551,6 +582,85 @@ h1 {
 .conditions .middle strike {
   text-transform: uppercase;
   font-weight: 900;
+}
+.testimonials {
+  padding: 50px 0;
+  background: #e8e8e8;
+}
+.testimonials .middle {
+  font-weight: 200;
+  color: #263248;
+  margin-bottom: 50px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+}
+.testimonials .carousel.slick-slider {
+  width: 85vw;
+}
+.testimonials .carousel .slick-arrow {
+  top: 25%;
+}
+.testimonials .carousel .block img {
+  height: 15vw;
+}
+.testimonials .carousel .block.slick-current img {
+  height: 18vw;
+  margin: 0 auto;
+}
+.testimonials .carousel .block.slick-current .info {
+  display: block;
+}
+.testimonials .carousel .block.slick-current + div img,
+.testimonials .carousel .block.slick-current + div + div img {
+  margin-left: auto;
+}
+.testimonials .class {
+  margin: 50px 0;
+  padding: 15px 0;
+  background-color: #7e8aa2;
+  font-weight: 200;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.testimonials #answers {
+  margin: 75px auto;
+}
+.testimonials #answers.slick-slider {
+  width: 85vw;
+}
+.testimonials #answers .item {
+  width: 30vw;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.testimonials #answers .item.slick-current {
+  display: flex;
+  justify-content: center;
+}
+.testimonials #answers .item.slick-current + div p,
+.testimonials #answers .item.slick-current + div + div p {
+  float: right;
+}
+.testimonials #answers .item b {
+  display: block;
+  font-weight: 400;
+  font-size: 30px;
+}
+.sure {
+  padding: 55px 0;
+}
+.sure .title {
+  margin-bottom: 55px;
+}
+.sure .middle {
+  font-weight: 200;
+  color: #7e8aa2;
+  font-size: 30px;
+  text-align: center;
 }
 .bonus {
   padding-top: 40px;
@@ -618,6 +728,80 @@ h1 {
 }
 .bonus .star {
   margin: 0 auto;
+}
+.sale-course {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #263248;
+}
+.sale-course .title {
+  margin-bottom: 80px;
+}
+.sale-course .content {
+  display: flex;
+}
+.sale-course .content > div {
+  width: 50%;
+}
+.sale-course .content .left p {
+  font-size: 24px;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+.sale-course .content .left .head {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.sale-course .content .left div {
+  display: flex;
+}
+.sale-course .content .left div span {
+  font-weight: 400;
+}
+.sale-course .content .left div:nth-child(2),
+.sale-course .content .left .head {
+  margin-left: 45px;
+}
+.sale-course .content .left img:nth-child(2),
+.sale-course .content .left p:nth-child(2) {
+  margin-left: 60px;
+}
+.sale-course .content .right p {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+.sale-course .content .right .check-list li {
+  margin-bottom: 15px;
+  list-style-image: url(../img/check-list-black.png);
+}
+.sale-course .content .right .check-list li span {
+  font-weight: 200;
+  color: black;
+  font-size: 24px;
+}
+.sale-course .content .right .check-list li span b {
+  font-size: 30px;
+  font-weight: 400;
+  color: #263248;
+}
+.sale-course .sum {
+  margin: 25px 0;
+  text-align: center;
+  font-size: 36px;
+}
+.sale-course .sum span {
+  font-size: 48px;
+  font-weight: 200;
+}
+.sale-course .sum b {
+  font-weight: 900;
+  color: #ff9700;
+  text-transform: uppercase;
+}
+.sale-course .btn-orange {
+  padding: 15px 20px;
 }
 .registration {
   padding-top: 65px;
@@ -702,6 +886,23 @@ h1 {
 .registration .content .right input[type=submit]:hover {
   background: #ff9700;
 }
+.find-us {
+  padding: 30px 0;
+}
+.contact {
+  padding: 25px 15px;
+  background-color: #3b465a;
+  font-weight: 200;
+  color: white;
+}
+.contact .padding {
+  display: flex;
+  justify-content: space-between;
+}
+.contact p {
+  line-height: .8;
+  font-size: 30px;
+}
 @media screen and (max-width: 1350px) {
   header .menu {
     font-size: 25px;
@@ -745,6 +946,12 @@ h1 {
     font-size: 30px;
   }
   .registration .content .right input[type=submit] {
+    font-size: 24px;
+  }
+  .sale .content .left p {
+    font-size: 21px;
+  }
+  .contact p {
     font-size: 24px;
   }
 }
@@ -812,6 +1019,14 @@ h1 {
   .program .items .item-block {
     margin-bottom: 25px;
   }
+  .team .carousel .block .info {
+    text-align: center;
+    left: -5vw;
+    width: 80vw;
+  }
+  .testimonials .carousel .block.slick-current img {
+    height: 30vw;
+  }
   .conditions .content .left {
     font-size: 25px;
   }
@@ -840,6 +1055,24 @@ h1 {
   }
   .registration .content .right {
     width: 80%;
+  }
+  .sale .content {
+    flex-direction: column;
+  }
+  .sale .content > div {
+    width: 100%;
+  }
+  .sale .content .left {
+    margin-bottom: 25px;
+  }
+  .sale .content .left div {
+    justify-content: center;
+  }
+  .sale .content .right p {
+    text-align: center;
+  }
+  .contact p {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1011,6 +1244,58 @@ h1 {
   .bonus .content .right input[type=submit] {
     padding: 10px 12px;
   }
+  .team .carousel {
+    width: 98vw;
+  }
+  .team .carousel .slick-list {
+    padding: 0 !important;
+  }
+  .team .title {
+    font-size: 24px;
+  }
+  .team .carousel .block .info {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+  }
+  .team .carousel .block.slick-current img {
+    height: 60vw;
+  }
+  .testimonials .title {
+    font-size: 24px;
+  }
+  .testimonials .class {
+    font-size: 20px;
+  }
+  .testimonials #answers.slick-slider {
+    width: 100vw;
+  }
+  .testimonials .carousel .block.slick-current img {
+    height: 50vw;
+  }
+  .sale .title {
+    margin-bottom: 25px;
+  }
+  .sale .content .left img {
+    display: none;
+  }
+  .sale .content .left div {
+    flex-direction: column;
+  }
+  .sale .content .left p:nth-child(2),
+  .sale .content .left .head,
+  .sale .content .left p {
+    margin-left: 0;
+    text-align: center;
+  }
+  .sale .content .right p {
+    text-align: center;
+  }
+  .sale .content .right .check-list li span {
+    font-size: 21px;
+  }
   .registration {
     padding: 25px 0;
   }
@@ -1030,6 +1315,11 @@ h1 {
   }
   .registration .content .right input[type=submit] {
     padding: 10px 12px;
+  }
+  .contact .padding {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 .cbalink {
