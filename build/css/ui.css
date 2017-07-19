@@ -38,7 +38,7 @@
 .course-start div {
   border: 5px solid white;
   height: 100%;
-  font-size: 36px;
+  font-size: 32px;
   text-transform: uppercase;
   color: white;
   padding-left: 10px;
@@ -161,6 +161,7 @@ p.title span {
   transform: rotate(180deg);
 }
 .up-button {
+  z-index: 3;
   height: 49px;
   width: 49px;
   background: url(../img/up-button.png);
@@ -186,13 +187,12 @@ p.title span {
 @media screen and (max-width: 767px) {
   .items {
     padding: 0;
+    padding-left: 3%;
     justify-content: center;
   }
   .items .item-block {
     width: 300px;
     margin-bottom: 25px;
-    justify-content: center;
-    text-align: center;
     padding-left: 0;
   }
   .items .item-block img {
@@ -204,5 +204,18 @@ p.title span {
   }
   .items .item-block span {
     font-size: 16px;
+  }
+  .course-start {
+    width: 260px;
+    height: 165px;
+  }
+  .course-start div {
+    padding-top: 15px;
+  }
+  .carousel .slick-arrow.slick-next {
+    right: 0;
+  }
+  .carousel .slick-arrow.slick-prev {
+    left: 0;
   }
 }

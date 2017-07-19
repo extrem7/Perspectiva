@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,65 +7,75 @@
     <title>Template</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body>
 <header class="navbar-fixed-top padding">
-    <img src="img/logo.png" alt="logo" class="logo">
-    <ul class="menu">
-        <li><a href="">Условия</a></li>
-        <li><a href="">Преподаватели</a></li>
-        <li><a href="">Отзывы</a></li>
-        <li><a href="">Стоимость</a></li>
-        <li><a href="">Контакты</a></li>
-    </ul>
-    <div class="phone">
-        <div class="phone-icon"></div>
-        <a href="tel:380963642623">(044) 33-99-710</a></div>
+    <div class="container-wrap">
+        <img src="img/logo.png" alt="logo" class="logo">
+        <ul class="menu">
+            <button type="button" class="toggle-btn">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span></button>
+            <div class="list">
+                <li><a href="#program">Программа</a></li>
+                <li><a href="#teachers">Преподаватели</a></li>
+                <li><a href="#conditions">Стоимость</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#find-us">Контакты</a></li>
+            </div>
+        </ul>
+        <div class="phone">
+            <div class="phone-icon"></div>
+            <a href="tel:380963642623">(044) 33-99-710</a></div>
+    </div>
 </header>
 <section class="main">
     <div class="blue-wrap padding">
-        <h1>Самые практичные курсы <br>интернет-маркетинга в Киеве </h1>
-        <p>Только практические знания, проверенные на собственном опыте</p>
-        <p class="big">Всего за 2 месяца на реальном проекте <br>мы научим вас продавать в интернете</p>
-        <div class="btn-orange">записаться</div>
-    </div>
-    <div class="row padding">
-        <ul class="check-list">
-            <li><span>Дешевле курсов маркетинговых агенств на 40%</span></li>
-            <li><span>Эффективнее бесплатных вебинаров на 60%</span></li>
-            <li><span>Комплексный подход к интернет-маркетингу</span></li>
-        </ul>
-        <div class="course-start">
-            <div>
-                Старт курса <br>1 июня<br>
-                <span>вечер</span>
+        <div class="container-wrap wow">
+            <h1>Самые практичные курсы <br>интернет-маркетинга в Киеве </h1>
+            <p>Только практические знания, проверенные на собственном опыте</p>
+            <p class="big">Всего за 2 месяца на реальном проекте <br>мы научим вас продавать в интернете</p>
+            <div class="row">
+                <ul class="check-list">
+                    <li><span>Дешевле курсов маркетинговых агенств на 40%</span></li>
+                    <li><span>Эффективнее бесплатных вебинаров на 60%</span></li>
+                    <li><span>Комплексный подход к интернет-маркетингу</span></li>
+                </ul>
+                <div class="course-start">
+                    <div>
+                        Старт курса <br>1 июня<br>
+                        <span>вечер</span>
+                    </div>
+                </div>
             </div>
+            <a href="#registration" class="btn-orange">записаться</a>
         </div>
     </div>
 </section>
-<section class="sale padding">
-    <p class="title">Внимание! <span>Акция!</span></p>
-    <div class="content">
-        <div class="text">
+<section class="sale padding ">
+    <p class="title wow fadeInUp">Внимание! <span>Акция!</span></p>
+    <div class="content container-wrap">
+        <div class="text wow fadeInUp">
             <p>Оплатите курс в течение <b>48 часов</b> и получите <b>подарок</b>:</p>
             <ul class="check-list">
                 <li><span>Лекцию для веб-разработчиков «Анатомия сайта» по основам веб-дизайна</span></li>
             </ul>
         </div>
-        <div class="star">Экономия <br>800 грн</div>
+        <div class="star wow fadeInUp">Экономия <br>800 грн</div>
     </div>
-    <a href="" class="btn-orange">хочу подарок</a>
+    <a href="#registration" class="btn-orange wow fadeInUp">хочу подарок</a>
 </section>
 <section class="profits">
-    <p class="title">ваши ключевыЕ <span>выгоды</span></p>
-    <div class="items">
-        <div class="item-block">
+    <p class="title wow fadeInUp">ваши ключевыЕ <span>выгоды</span></p>
+    <div class="items container-wrap">
+        <div class="item-block wow fadeInUp">
             <img src="img/profit-1.png" alt="">
             <div>
                 <p>владельцы малого <br>бизнеса</p>
@@ -75,7 +84,7 @@
             </span>
             </div>
         </div>
-        <div class="item-block">
+        <div class="item-block wow fadeInUp">
             <img src="img/profit-2.png" alt="">
             <div>
                 <p>креативные<br>стартаперы</p>
@@ -84,7 +93,7 @@
             </span>
             </div>
         </div>
-        <div class="item-block">
+        <div class="item-block wow fadeInUp">
             <img src="img/profit-3.png" alt="">
             <div>
                 <p>оффлайн-<br>маркетологи</p>
@@ -93,7 +102,7 @@
             </span>
             </div>
         </div>
-        <div class="item-block">
+        <div class="item-block wow fadeInUp">
             <img src="img/profit-4.png" alt="">
             <div>
                 <p>амбициозные <br>новички</p>
@@ -104,28 +113,28 @@
         </div>
     </div>
     <div class="get-info">
-        <p>
+        <p class="wow fadeInUp">
             Запишитесь на <b class="white">бесплатную</b> консультацию<br>и узнайте как интернет-маркетинг поможет
             именно вам!
         </p>
     </div>
     <div class="btn-wrap">
-        <a href="" class="btn-orange">нужна консультация</a>
+        <a href="#consultation" class="btn-orange wow fadeInUp">нужна консультация</a>
     </div>
 </section>
 <section class="you-get">
-    <p class="title">что вы получите в <span>результате обучения</span></p>
-    <div class="row">
+    <p class="title wow fadeInUp">что вы получите в <span>результате обучения</span></p>
+    <div class="row wow fadeInUp">
         <div class="left">
             Главное ваше <br>приобретение - это целостное<br>понимание инструментов <br>интернет-маркетинга!
         </div>
         <div class="right"></div>
     </div>
 </section>
-<section class="parts">
+<section class="parts wow fadeInUp">
     <p class="title">Составляющие эффективной <span>программы курса</span></p>
-    <div class="items">
-        <div class="item-block">
+    <div class="items container-wrap">
+        <div class="item-block wow">
             <div>
                 <p><b>1.</b>Теоретическая база</p>
                 <span>программа курса даст вам самые <br>необходимые знания для продвижения<br>бизнеса в Интернете</span>
@@ -151,53 +160,53 @@
         </div>
     </div>
 </section>
-<section class="program">
-    <p class="title">что входит в <span>программу курса</span></p>
-    <p class="middle">7 основных тематических блоков:</p>
-    <div class="items">
-        <div class="item-block">
+<section id="program" class="program">
+    <p class="title wow fadeInUp">что входит в <span>программу курса</span></p>
+    <p class="middle wow fadeInUp">7 основных тематических блоков:</p>
+    <div class="items container-wrap">
+        <div class="item-block wow fadeInUp">
             <img src="img/program-1.png" alt="">
             <div>
                 <p>инструменты<br>интернет-маркетинга</p>
                 <span>Ознакомление с современными <br>инструментами интернет-маркетинга<br>и способами их применения</span>
             </div>
         </div>
-        <div class="item-block">
+        <div class="item-block wow fadeInUp">
             <img src="img/program-2.png" alt="">
             <div>
                 <p>Разработка landing pages</p>
                 <span>Теоретические основы работы <br>одного из самых действенных <br>инструментов продаж в Интернете</span>
             </div>
         </div>
-        <div class="item-block">
+        <div class="item-block wow fadeInUp">
             <img src="img/program-3.png" alt="">
             <div>
                 <p>Конструкторы сайтов</p>
                 <span>Практическое освоение инструмента<br>создания сайтов без языков <br>программирования и навыков дизайна</span>
             </div>
         </div>
-        <div class="item-block">
+        <div class="item-block wow fadeInUp">
             <img src="img/program-4.png" alt="">
             <div>
                 <p>Контекстная реклама</p>
                 <span>Практическое освоение методов<br>проведения эффективных <br>рекламных компаний в Интернете</span>
             </div>
         </div>
-        <div class="item-block">
+        <div class="item-block wow fadeInUp">
             <img src="img/program-5.png" alt="">
             <div>
                 <p>WEB-аналитика</p>
                 <span>Ознакомление с методами и <br>инструментами оценки эффективности <br>рекламных компаний в сети</span>
             </div>
         </div>
-        <div class="item-block">
+        <div class="item-block wow fadeInUp">
             <img src="img/program-6.png" alt="">
             <div>
                 <p>продвижение в <br>соцсетях, SMM</p>
                 <span>Освоение навыков формирования <br>имиджа и продвижения с <br>помощью социальных сетей</span>
             </div>
         </div>
-        <div class="item-block">
+        <div class="item-block wow fadeInUp">
             <img src="img/program-7.png" alt="">
             <div>
                 <p>e-mAil рассылки</p>
@@ -205,12 +214,12 @@
             </div>
         </div>
     </div>
-    <p class="middle low">Хотите освоить комплексный подход к интернет-маркетингу?</p>
-    <a href="" class="btn-orange">хочу</a>
+    <p class="middle low wow fadeInUp">Хотите освоить комплексный подход к интернет-маркетингу?</p>
+    <a href="#registration" class="btn-orange wow fadeInUp">хочу</a>
 </section>
-<section class="team">
-    <p class="title">преподаватели <span>курса</span></p>
-    <div id="team" class="carousel">
+<section id="teachers" class="team">
+    <p class="title wow fadeInUp">преподаватели <span>курса</span></p>
+    <div id="team" class="carousel container-wrap wow fadeInUp">
         <div class="block">
             <img src="img/team-1.png" alt="">
             <div class="info">
@@ -273,9 +282,9 @@
         </div>
     </div>
 </section>
-<section class="conditions padding">
-    <p class="title white">Условия <span>обучения</span></p>
-    <div class="content">
+<section id="conditions" class="conditions padding">
+    <p class="title white wow fadeInUp">Условия <span>обучения</span></p>
+    <div class="content container-wrap wow fadeInUp">
         <div class="left">
             Длительность:<br>2 месяца, 20 занятий по 2,5 часа<br>Количество слушателей в группе:<br>8-10 человек.<br>Занятия
             - Вт, чт 19:00 - 21:30<br>Занятия проходят в полностью <br>оборудованных классах.
@@ -287,19 +296,21 @@
                     <span>вечер</span>
                 </div>
             </div>
-            <a href="" class="btn-orange">записаться</a>
+            <a href="#registration" class="btn-orange">записаться</a>
         </div>
     </div>
-    <p class="middle">Полная стоимость курса - <strike>11111</strike><b> ГРН</b> экономия <span>1112 грн</span> <br>
-        Новая цена при полной оплате - <span>XXXX грн</span></p>
+    <p class="middle container-wrap wow fadeInUp">Полная стоимость курса - <strike>7800</strike><b> ГРН</b>
+        <br>Новая цена при полной оплате - <span>7400 грн</span><br>
+        экономия <span>400 грн</span>
+        </p>
 </section>
-<section class="testimonials">
-    <p class="title">
+<section id="testimonials" class="testimonials">
+    <p class="title wow fadeInUp">
         занятия проходят в теплой и<br>
         <span>непринужденой обстановке</span>
     </p>
-    <p class="middle">в 200 м от станции метро «Политехническая»</p>
-    <div id="album" class="carousel">
+    <p class="middle wow fadeInUp">в 200 м от станции метро «Политехническая»</p>
+    <div id="album" class="carousel container-wrap wow fadeInUp">
         <div class="block">
             <img src="img/album-1.png" alt="">
         </div>
@@ -313,12 +324,12 @@
             <img src="img/album-2.png" alt="">
         </div>
     </div>
-    <div class="class">
+    <div class="class wow fadeInUp">
         В наши классы необязательно носить свои ноутбуки<br>У нас уже есть все необходимое для вас!
     </div>
-    <p class="title">Читать отзывы тех,<span> кто уже закончил курс</span>
+    <p class="title wow fadeInUp">Читать отзывы тех,<span> кто уже закончил курс</span>
     </p>
-    <div id="answers" class="carousel">
+    <div id="answers" class="carousel container-wrap wow fadeInUp">
         <div class="item">
             <p>
                 <b>Сергей Ледяхин</b>
@@ -378,36 +389,40 @@
     </div>
 </section>
 <section class="sure">
-    <p class="title">остались <span>сомнения?</span></p>
-    <p class="middle">
+    <p class="title wow fadeInUp">остались <span>сомнения?</span></p>
+    <p class="middle wow fadeInUp">
         Приходите на консультацию и получите ответы <br>на все интересующие вопросы
     </p>
 </section>
-<section class="bonus padding">
-    <p class="title white">бонусы бесплатной <span>консультации</span></p>
-    <p class="middle">во время консультации вы получаете:</p>
-    <div class="content">
-        <div class="left">
+<section id="consultation" class="bonus padding">
+    <p class="title white wow fadeInUp">бонусы бесплатной <span>консультации</span></p>
+    <p class="middle wow fadeInUp">во время консультации вы получаете:</p>
+    <div class="content container-wrap">
+        <div class="elipse wow fadeInUp"></div>
+        <div class="left wow fadeInUp">
             <ul class="check-list">
                 <li><span>Экспресс анализ интернет-маркетинга <br>вашего бизнеса</span></li>
                 <li><span>Чек-лист инструментов интернет-маркетинга</span></li>
                 <li><span>Реальные курсы использования <br>интернет-маркетинга</span></li>
             </ul>
         </div>
-        <form class="right">
-            <div class="select"><img src="img/form-icon-1.png" alt=""><input type="text" placeholder="Имя"></div>
-            <div class="select"><img src="img/form-icon-2.png" alt=""><input type="email" placeholder="E-mail"></div>
-            <div class="select"><img src="img/form-icon-3.png" alt=""><input type="phone" placeholder="Телефон"></div>
+        <form class="right  wow fadeInUp">
+            <div class="select"><img src="img/form-icon-1.png" alt=""><input type="text" placeholder="Имя">
+            </div>
+            <div class="select"><img src="img/form-icon-2.png" alt=""><input type="email"
+                                                                                          placeholder="E-mail"></div>
+            <div class="select"><img src="img/form-icon-3.png" alt=""><input type="phone"
+                                                                                          placeholder="Телефон"></div>
             <input type="submit" class="btn-orange" value="нужна консультация">
         </form>
     </div>
-    <div class="star">Экономия <br>800 грн</div>
+    <div class="star wow fadeInUp">Экономия <br>800 грн</div>
 </section>
 <section class="sale-course padding">
-    <p class="title">Хотите учиться <span>дешевле?</span></p>
-    <div class="content">
+    <p class="title wow fadeInUp">Хотите учиться <span>дешевле?</span></p>
+    <div class="content container-wrap">
         <div class="left">
-            <div class="head">Что нужно сделать?</div>
+            <div class="head wow fadeInUp">Что нужно сделать?</div>
             <div>
                 <img src="img/left-arrow.png" alt="">
                 <img src="img/right-arrow.png" alt="">
@@ -417,49 +432,54 @@
                 <p>Оплатить весь курс <br><span>ОДНИМ</span> платежом</p>
             </div>
         </div>
-        <div class="right">
+        <div class="right wow fadeInUp">
             <p>Что вы получите в подарок?</p>
             <ul class="check-list">
                 <li><span>Скидку <b>600</b> грн на стоимость обучения</span></li>
-                <li><span>Лекцию «Анатомия сайта», которая стоит   <b>250</b> грн, Вы получите <b>бесплатно!</b></span></li>
+                <li><span>Лекцию «Анатомия сайта», которая стоит   <b>250</b> грн, Вы получите <b>бесплатно!</b></span>
+                </li>
             </ul>
         </div>
     </div>
-    <div class="sum">600+250=<span>850 грн</span> <b>экономии</b></div>
-    <a href="" class="btn-orange">хочу сэкономить!</a>
+    <div class="sum wow fadeInUp">600+250=<span>850 грн</span> <b>экономии</b></div>
+    <a href="#registration" class="btn-orange wow fadeInUp">хочу сэкономить!</a>
 </section>
-<section class="registration padding">
-    <div class="content">
+<section id="registration" class="registration padding">
+    <div class="content container-wrap">
         <div class="left">
-            <div class="course-start">
+            <div class="course-start wow fadeInUp">
                 <div>
                     Старт курса <br>1 июня<br>
                     <span>вечер</span>
                 </div>
             </div>
-            <p>
+            <p class="wow fadeInUp">
                 <span>Курс Интернет-маркетинга,</span> <br>
                 после которого вы сможете <br>
                 <span>эффективно</span> продвигать бизнес <br>
                 в интернете своими руками
             </p>
         </div>
-        <form class="right">
+        <form class="right  wow fadeInUp">
             <p>Форма регистрации</p>
-            <div class="select"><img src="img/form-icon-1.png" alt=""><input type="text" placeholder="Имя"></div>
-            <div class="select"><img src="img/form-icon-2.png" alt=""><input type="email" placeholder="E-mail"></div>
-            <div class="select"><img src="img/form-icon-3.png" alt=""><input type="phone" placeholder="Телефон"></div>
-            <div class="select"><img src="img/form-icon-4.png" alt=""><textarea placeholder="Сообщение"></textarea>
+            <div class="select"><img src="img/form-icon-1.png" alt=""><input type="text" placeholder="Имя">
+            </div>
+            <div class="select"><img src="img/form-icon-2.png" alt=""><input type="email"
+                                                                                          placeholder="E-mail"></div>
+            <div class="select"><img src="img/form-icon-3.png" alt=""><input type="phone"
+                                                                                          placeholder="Телефон"></div>
+            <div class="select"><img src="img/form-icon-4.png" alt=""><textarea
+                    placeholder="Сообщение"></textarea>
             </div>
             <input type="submit" class="btn-orange" value="забронировать место">
         </form>
     </div>
 </section>
-<section class="find-us">
-    <p class="title">Найти нас <span>очень просто</span></p>
+<section id="find-us" class="find-us">
+    <p class="title wow fadeInUp">Найти нас <span>очень просто</span></p>
 </section>
-<section class="contact">
-    <div class="padding">
+<section class="contact padding">
+    <div class="container-wrap wow fadeInUp">
         <div class="left">
             <p>Центр it-обучения «Перспектива - ХХІ век»</p>
             <p>г. Киев, ул. Ванды Василевской, 7, оф.710</p>
@@ -471,13 +491,14 @@
     </div>
 </section>
 <div class="map" id="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.350116363242!2d30.46613461543954!3d50.4532046794756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce819e075a1b%3A0x1ab962ad8948ebaa!2z0KjQutC-0LvQsCDQtNC40LfQsNC50L3QsCAi0J_QtdGA0YHQv9C10LrRgtC40LLQsC1YWEkg0LLQtdC6Ig!5e0!3m2!1sru!2sua!4v1497974101738" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1796.3013240525672!2d30.466857002582735!3d50.45313804125066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce819e019ff7%3A0x104e8a7e5209adee!2z0KPQpiAi0J_QtdGA0YHQv9C10LrRgtC40LLQsCAtIFhYSSDRgdGC0L7Qu9GW0YLRgtGPIg!5e0!3m2!1suk!2sua!4v1499951473127"
+            width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 <div class="up-button"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script src="js/main.js"></script>
 </body>
-
 </html>

@@ -51,7 +51,7 @@
   div {
     border: 5px solid white;
     height: 100%;
-    font-size: 36px;
+    font-size: 32px;
     text-transform: uppercase;
     color: white;
     padding-left: 10px;
@@ -154,9 +154,9 @@ p.title {
 
 .carousel {
   margin-bottom: 500px;
-  .slick-list{
-    padding:0;
-   // height:620px;
+  .slick-list {
+    padding: 0;
+    // height:620px;
   }
   &.slick-slider {
     width: 1000px;
@@ -167,7 +167,7 @@ p.title {
     position: absolute;
     .size(63px, 120px);
     display: block;
-    top:20%;
+    top: 20%;
     background-image: url(../img/carousel-arrow.png);
     background-color: transparent;
     .transition(background);
@@ -185,6 +185,7 @@ p.title {
 }
 
 .up-button {
+  z-index: 3;
   height: 49px;
   width: 49px;
   background: url(../img/up-button.png);
@@ -215,12 +216,11 @@ p.title {
 @media screen and (max-width: 767px) {
   .items {
     padding: 0;
+    padding-left: 3%;
     justify-content: center;
     .item-block {
       width: 300px;
       margin-bottom: 25px;
-      justify-content: center;
-      text-align: center;
       padding-left: 0;
       img {
         margin: 0 15px;
@@ -231,6 +231,23 @@ p.title {
       }
       span {
         font-size: 16px;
+      }
+    }
+  }
+  .course-start{
+    width: 260px;
+    height:165px;
+    div{
+      padding-top: 15px;
+    }
+  }
+  .carousel {
+    .slick-arrow {
+      &.slick-next {
+        right: 0;
+      }
+      &.slick-prev {
+        left: 0;
       }
     }
   }
